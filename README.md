@@ -1,0 +1,1 @@
+This challenge practices function declarations, function expressions, arrow functions, closures, and recursion to solve business related problems.
