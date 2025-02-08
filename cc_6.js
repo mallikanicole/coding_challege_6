@@ -31,3 +31,14 @@ let performanceRating=[Excellent=.2,Good=.1,Average=.05] ;//declare performance 
 
 console.log(`Bonus:$${calculateBonus(5000, Excellent)}`); // Expected output: "Bonus: $1000"
 console.log(`Bonus:$${calculateBonus(7000, Good)}`);      // Expected output: "Bonus: $700"
+
+
+//Task 4-Parameters and Arguments
+
+const calculateSubscriptionCost=(plan,months,discount)=>
+    plan*months-discount;//create subscription cost function
+
+let plan=[Basic=10,Premium=20,Enterprise=50];//declare plan prices
+
+console.log(`Basic Subscription Cost for 10 months:$${calculateSubscriptionCost(Basic, 6, 10)}`); // Expected output: "Total Cost: $50"
+console.log(`Premium Subscription Cost for 12 months:$${calculateSubscriptionCost(Premium, 12, 0)}`); // Expected output: "Total Cost: $240"
