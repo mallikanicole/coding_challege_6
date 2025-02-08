@@ -29,8 +29,8 @@ const calculateBonus=(salary,performanceRating)=>
 
 let performanceRating=[Excellent=.2,Good=.1,Average=.05] ;//declare performance rating bonuses
 
-console.log(`Bonus:$${calculateBonus(5000, Excellent)}`); // Expected output: "Bonus: $1000"
-console.log(`Bonus:$${calculateBonus(7000, Good)}`);      // Expected output: "Bonus: $700"
+console.log(`Bonus for Excellent Performance on $5000 Salary:$${calculateBonus(5000, Excellent)}`); // Expected output: "Bonus: $1000"
+console.log(`Bonus for Good Performance on $7000 Salary:$${calculateBonus(7000, Good)}`);      // Expected output: "Bonus: $700"
 
 
 //Task 4-Parameters and Arguments
