@@ -9,7 +9,9 @@ console.log(`Profit:$${calculateProfit(20, 30, 100)}`); // Expected output: "Tot
 console.log(`Profit:$${calculateProfit(50, 70, 200)}`); // Expected output: "Total Profit: $4000"
 
 
+
 //Task 2-Function Expression
+
 let calculateSalesTax=function
 salesTax(amount, taxRate){
     return(amount*taxRate)
@@ -19,7 +21,9 @@ console.log(`Sales Tax:$${calculateSalesTax(100,0.07)}`); // Expected output: "S
 console.log(`Sales Tax:$${calculateSalesTax(500,0.1)}`);  // Expected output: "Sales Tax: $50"
 
 
+
 //Task 3-Arrow Function
+
 const calculateBonus=(salary,performanceRating)=>
     salary*performanceRating;//create bonus function
 
