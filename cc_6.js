@@ -42,3 +42,12 @@ let plan=[Basic=10,Premium=20,Enterprise=50];//declare plan prices
 
 console.log(`Basic Subscription Cost for 10 months:$${calculateSubscriptionCost(Basic, 6, 10)}`); // Expected output: "Total Cost: $50"
 console.log(`Premium Subscription Cost for 12 months:$${calculateSubscriptionCost(Premium, 12, 0)}`); // Expected output: "Total Cost: $240"
+
+
+//Task 5-Returning Values
+
+const convertCurrency=(amount,exchangeRate)=>
+    amount*exchangeRate
+
+console.log(`Converted Currency:$${Math.floor(convertCurrency(100, 1.1))}`); // Expected output: "Converted Amount: $110.00"
+console.log(`Converted Currency:$${convertCurrency(250, 0.85)}`); // Expected output: "Converted Amount: $212.50"
