@@ -17,7 +17,7 @@ salesTax(amount, taxRate){
     return(amount*taxRate)
 };//create sales tax function
 
-console.log(`Sales Tax:$${calculateSalesTax(100,0.07)}`); // Expected output: "Sales Tax: $7"
+console.log(`Sales Tax:$${Math.floor(calculateSalesTax(100,0.07))}`); // Expected output: "Sales Tax: $7"
 console.log(`Sales Tax:$${calculateSalesTax(500,0.1)}`);  // Expected output: "Sales Tax: $50"
 
 
