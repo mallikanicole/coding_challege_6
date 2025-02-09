@@ -67,11 +67,13 @@ applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
 
 function createExpenseTracker(tracker,expenses){
     return function(tracker){
-        return expenses+(tracker+expenses+0);{
-            return tracker.reduce((expenses,tracker)=>expenses+tracker.amount+tracker)
+        return expenses+(tracker+expenses+0);
         }
     }
-}
-
+let expenses=tracker.reduce((expenses,tracker)=>expenses+tracker.amount+tracker)
 console.log(tracker(200)); // Expected output: "Total Expenses: $200"
 console.log(tracker(150)); // Expected output: "Total Expenses: $350"
+
+
+//Task 8-Recursion in JavaScript
+
