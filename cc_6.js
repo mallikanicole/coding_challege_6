@@ -75,8 +75,8 @@ function createExpenseTracker(){
             totalExpenses+=expenses;
             return `Total Expense:$${totalExpenses}`
         }
-    }
-let tracker=createExpenseTracker()
+    };//create function to track running total of expenses
+let tracker=createExpenseTracker();//connect function to tracker
 console.log(`Total Expenses:$${tracker(200)}`); // Expected output: "Total Expenses: $200"
 console.log(`Total Expenses:$${tracker(150)}`); // Expected output: "Total Expenses: $350"
 
@@ -88,6 +88,6 @@ function  calculateYearsToPromotion(employeeLevel){
     return console.log(`Years to Level 10:0`);
   }
   return console.log(`Years to Level 10:${2*(10-employeeLevel)}`);
-}
+};//create function to determine years to reach promotion(level10)
 calculateYearsToPromotion(7); // Expected output: "Years to Level 10: 6"
 calculateYearsToPromotion(5); // Expected output: "Years to Level 10: 10"
