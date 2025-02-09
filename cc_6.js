@@ -55,9 +55,11 @@ console.log(`Converted Currency:$${convertCurrency(250, 0.85)}`); // Expected ou
 
 //Task 6-Higher Order Functions
 
-let orders=[444,222,555,777,888]
-const applyBulkDiscount=orders.filter(orders=>order>=500);
 
 let orders = [200, 600, 1200, 450, 800];
+let applyBulkDiscount= orders.filter(orders=>order>500){
+    return orders.map(order=>order*(1-discount))
+};
+
 applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
 // Expected output: [200, 540, 1080, 450, 720]
