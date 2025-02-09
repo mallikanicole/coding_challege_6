@@ -69,14 +69,16 @@ let discountedOrders=applyBulkDiscount(orders, amount => amount > 500 ? amount *
 
 //Task 7-Closures
 
-let tracker= function createExpenseTracker(tracker,expenses){
-    return function(tracker){
-        return expenses+(tracker+expenses+0);
+function createExpenseTracker(){
+    let totalExpenses=0;
+        return function(expenses){
+            totalExpenses+=expenses;
+            return `Total Expense:$${totalExpenses}`
         }
     }
-let expenses=tracker.reduce((expenses,tracker)=>expenses+tracker.amount+tracker)
-console.log(tracker(200)); // Expected output: "Total Expenses: $200"
-console.log(tracker(150)); // Expected output: "Total Expenses: $350"
+let tracker=createExpenseTracker()
+console.log(`Total Expenses:$${tracker(200)}`); // Expected output: "Total Expenses: $200"
+console.log(`Total Expenses:$${tracker(150)}`); // Expected output: "Total Expenses: $350"
 
 
 //Task 8-Recursion in JavaScript
