@@ -57,9 +57,21 @@ console.log(`Converted Currency:$${convertCurrency(250, 0.85)}`); // Expected ou
 
 
 let orders = [200, 600, 1200, 450, 800];
-let applyBulkDiscount= orders.filter(orders=>order>500){
-    return orders.map(order=>order*(1-discount))
-};
+let applyBulkDiscount= orders.map(orders=>order>500);
 
 applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
 // Expected output: [200, 540, 1080, 450, 720]
+
+
+//Task 7-Closures
+
+function createExpenseTracker(tracker,expenses){
+    return function(tracker){
+        return expenses+(tracker+expenses+0);{
+            return tracker.reduce((expenses,tracker)=>expenses+tracker.amount+tracker)
+        }
+    }
+}
+
+console.log(tracker(200)); // Expected output: "Total Expenses: $200"
+console.log(tracker(150)); // Expected output: "Total Expenses: $350"
