@@ -56,15 +56,6 @@ console.log(`Converted Currency:$${convertCurrency(250, 0.85)}`); // Expected ou
 //Task 6-Higher Order Functions
 
 
-let orders = [200, 600, 1200, 450, 800];
-function applyBulkDiscount(orders,discountFunction){
-    return orders.map(order=>{
-        const discountedPrice=discountFunction(order.price);
-    return{...order,price:discountedPrice};
-    });
-    }
-let discountedOrders=applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)
-// Expected output: [200, 540, 1080, 450, 720]
 
 
 //Task 7-Closures
